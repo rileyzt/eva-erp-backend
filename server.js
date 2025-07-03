@@ -64,9 +64,9 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
-app.use('/api/chat', chatRoutes);
-app.use('/api/upload', uploadRoutes);
-app.use('/api/export', exportRoutes);
+app.use('/chat', chatRoutes);
+app.use('/upload', uploadRoutes);
+app.use('/export', exportRoutes);
 
 // Serve uploaded files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
